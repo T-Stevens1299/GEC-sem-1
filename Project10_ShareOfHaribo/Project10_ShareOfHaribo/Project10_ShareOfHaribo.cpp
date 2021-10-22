@@ -14,5 +14,4 @@ int main()
 
     cout << "The packets per student are : " << PacketsPerStudent << endl;
     cout << "The packets remaining are : " << PacketsRemaining << endl;
-
 }
