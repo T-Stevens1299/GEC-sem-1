@@ -22,6 +22,7 @@ int main()
 		attackChoice(PlayerChoice);
 
 		KeepPlaying(isPlaying);
+	
 	}
 	cout << "Game Ended" << endl;
 }
@@ -94,13 +95,30 @@ void KeepPlaying(bool isPlaying)
 		cout << "You have killed the troll and won!" << endl;
 		cout << "Do you want to play again y/n?" << endl;
 		cin >> playagain;
-		if (playagain = 'y') 
+		if (playagain == 'y') 
 		{
 			isPlaying = true;
 			EHealth = 2000;
 			PHealth = 1000;
 		}
-		else 
+		else if (playagain == 'n')
+		{
+			isPlaying = false;
+		}
+	}
+
+	if (PHealth == 0)
+	{
+		cout << "The Troll has defeated you!" << endl;
+		cout << "Do you want to play again y/n?" << endl;
+		cin >> playagain;
+		if (playagain == 'y')
+		{
+			isPlaying = true;
+			EHealth = 2000;
+			PHealth = 1000;
+		}
+		else if(playagain == 'n')
 		{
 			isPlaying = false;
 		}
