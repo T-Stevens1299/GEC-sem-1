@@ -21,5 +21,6 @@ int main()
 
 	//Pause the output
 
-	cin.get();
+	std::cin.ignore();
+	std::cin.get();
 }
