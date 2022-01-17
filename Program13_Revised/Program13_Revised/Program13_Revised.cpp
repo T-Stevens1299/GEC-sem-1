@@ -39,8 +39,12 @@ int main()
 		}
 		else if (UInput == 0)
 		{
+
+			std::cin.ignore();
+			std::cin.get();
+
 			cont = false;
-			cin.get();
+			
 		}
 	}
 	
