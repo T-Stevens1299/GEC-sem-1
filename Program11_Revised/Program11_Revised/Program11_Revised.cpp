@@ -44,5 +44,4 @@ int main()
 		cout << "Not a valid input" << endl;
 		break;
 	}
-
 }
